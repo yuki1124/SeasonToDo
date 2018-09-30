@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,31 +16,41 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Select Season"
-            android:textStyle="italic" />
+            android:textSize="40sp" />
 
         <Button
-            android:id="@+id/spring"
+            android:id="@+id/spring_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="spring" />
+            android:layout_weight="8"
+            android:onClick="spring_button"
+            android:text="Spring" />
 
         <Button
-            android:id="@+id/summer"
+            android:id="@+id/summer_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:onClick="summer_button"
             android:text="summer" />
 
         <Button
-            android:id="@+id/autumn"
+            android:id="@+id/autumn_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:onClick="autumn_button"
             android:text="autumn" />
 
         <Button
-            android:id="@+id/winter"
+            android:id="@+id/winter_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:onClick="winter_button"
             android:text="winter" />
     </LinearLayout>
+
 </RelativeLayout>
