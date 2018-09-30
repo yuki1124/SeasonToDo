@@ -19,6 +19,7 @@ public class AddActivity extends AppCompatActivity {
     DatabaseReference reference = database.getReference();
 
     EditText contentText;
+    EditText seasonText;
     Button sendButton;
 
     @Override
@@ -26,6 +27,7 @@ public class AddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        //seasonText = (EditText)findViewById(R.id.season_text);
         contentText = (EditText)findViewById(R.id.content_text);
         sendButton = (Button)findViewById(R.id.send_button);
 

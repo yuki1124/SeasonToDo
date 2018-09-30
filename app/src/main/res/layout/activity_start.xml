@@ -9,20 +9,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/SeasonToDo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SeasonToDo" />
+            android:padding="30dp"
+            android:text="Season ToDo"
+            android:textAlignment="center"
+            android:textSize="50dp" />
 
         <Button
             android:id="@+id/start_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="start" />
+            android:text="start"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 
