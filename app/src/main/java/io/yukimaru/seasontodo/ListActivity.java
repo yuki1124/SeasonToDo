@@ -26,10 +26,14 @@ public class ListActivity extends AppCompatActivity{
     DatabaseReference reference = database.getReference();
 
     private String message;
+    String season;
     TextView seasonText;
     ListView listView;
     FloatingActionButton addButton;
     CustomAdapter customAdapter;
+
+    public static final String Season
+            = "io.yukimaru.seasontodo.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,8 @@ public class ListActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ListActivity.this, AddActivity.class);
+                season = message;
+                intent.putExtra(Season, season);
                 startActivity(intent);
             }
         });
@@ -89,5 +95,8 @@ public class ListActivity extends AppCompatActivity{
 
             }
         });
+    }
+    protected void onActivityResult( int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
     }
 }

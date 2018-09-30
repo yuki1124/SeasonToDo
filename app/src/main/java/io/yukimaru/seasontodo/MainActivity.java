@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button autumnButton;
     Button winterButton;
 
+    //intent
     public static final String Season
             = "io.yukimaru.seasontodo.MESSAGE";
 

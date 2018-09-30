@@ -20,6 +20,7 @@ public class AddActivity extends AppCompatActivity {
 
     EditText contentText;
     Button sendButton;
+    private String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,9 @@ public class AddActivity extends AppCompatActivity {
         contentText = (EditText)findViewById(R.id.content_text);
         sendButton = (Button)findViewById(R.id.send_button);
 
+        Intent intent = getIntent();
+        message = intent.getStringExtra(ListActivity.Season);
+
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,8 +40,8 @@ public class AddActivity extends AppCompatActivity {
                 String key = reference.push().getKey();//keyのpush->firebaseのkey(現在時刻を暗号化したもの)
                 Item item = new Item(content,key);
 
-                //reference.child("Spring").child(key).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {
-                reference.child(key).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {//保存がされた後の処理
+                reference.child(message).child(key).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {
+                //reference.child(message).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {//保存がされた後の処理
                     @Override
                     public void onSuccess(Void aVoid) {
                         finish();//画面を閉じる
