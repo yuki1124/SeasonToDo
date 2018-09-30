@@ -20,7 +20,6 @@ public class AddActivity extends AppCompatActivity {
 
     EditText contentText;
     Button sendButton;
-    //EditText titleText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,6 @@ public class AddActivity extends AppCompatActivity {
 
         contentText = (EditText)findViewById(R.id.content_text);
         sendButton = (Button)findViewById(R.id.send_button);
-        //titleText = (EditText)findViewById(R.id.);
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
