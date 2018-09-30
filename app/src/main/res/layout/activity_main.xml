@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Select Season"
+            android:textAlignment="center"
             android:textSize="40sp" />
 
         <Button
@@ -25,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:onClick="spring_button"
+            android:onClick="springClick"
             android:text="Spring" />
 
         <Button
@@ -33,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:onClick="summer_button"
+            android:onClick="summerClick"
             android:text="summer" />
 
         <Button
@@ -41,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:onClick="autumn_button"
+            android:onClick="autumnClick"
             android:text="autumn" />
 
         <Button
@@ -49,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="8"
-            android:onClick="winter_button"
+            android:onClick="winterClick"
             android:text="winter" />
     </LinearLayout>
 

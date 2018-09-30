@@ -17,7 +17,8 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:text="season"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:textAlignment="center"/>
 
         <ListView
             android:id="@+id/list_view"

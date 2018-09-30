@@ -25,6 +25,7 @@ public class ListActivity extends AppCompatActivity{
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference reference = database.getReference();
 
+    private String message;
     TextView seasonText;
     ListView listView;
     FloatingActionButton addButton;
@@ -38,6 +39,10 @@ public class ListActivity extends AppCompatActivity{
         seasonText = (TextView)findViewById(R.id.season_text);
         listView = (ListView)findViewById(R.id.list_view);
         addButton = (FloatingActionButton)findViewById(R.id.add_button);
+
+        Intent intent = getIntent();
+        message = intent.getStringExtra(MainActivity.Season);
+        seasonText.setText(message);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
