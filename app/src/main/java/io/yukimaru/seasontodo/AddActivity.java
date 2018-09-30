@@ -19,24 +19,21 @@ public class AddActivity extends AppCompatActivity {
     DatabaseReference reference = database.getReference();
 
     EditText contentText;
-    EditText seasonText;
     Button sendButton;
+    //EditText titleText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
-        //seasonText = (EditText)findViewById(R.id.season_text);
         contentText = (EditText)findViewById(R.id.content_text);
         sendButton = (Button)findViewById(R.id.send_button);
+        //titleText = (EditText)findViewById(R.id.);
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddActivity.this, ListActivity.class);
-                startActivity(intent);
-
                 String content = contentText.getText().toString();
                 String key = reference.push().getKey();//keyのpush->firebaseのkey(現在時刻を暗号化したもの)
                 Item item = new Item(content,key);
@@ -48,7 +45,7 @@ public class AddActivity extends AppCompatActivity {
                         finish();//画面を閉じる
                     }
             });
-        }
+            }
     });
 }
 }
