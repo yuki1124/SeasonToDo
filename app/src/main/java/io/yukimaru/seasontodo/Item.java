@@ -1,18 +1,16 @@
 package io.yukimaru.seasontodo;
 
 public class Item {
+    private String season;
     private String content;
     private String key;
 
 
-public Item(String content, String key){
+public Item(String content, String season, String key){
    this.content = content;
+   this.season = season;
    this.key = key;
 }
-
-public Item(){
-
-    }
     public String getKey() {
         return key;
     }
@@ -27,5 +25,13 @@ public Item(){
 
     public void setContent(String content){//タイトルの情報の取得
         this.content = content;
+    }
+
+    public String getSeason(){
+    return season;
+    }
+
+    public void setSeason(){
+    this.season = season;
     }
 }
