@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.List;
+import io.yukimaru.seasontodo.R;
 
 import io.yukimaru.seasontodo.Item;
 
@@ -47,5 +48,17 @@ public class CustomAdapter extends ArrayAdapter<Item> {
         Item item = items.get(position);
 
         viewHolder.checkboxText.setText(item.getContent());
+
+        return convertView;
+    }
+
+    public Item getItemByKey(String key) {
+        for (Item item : items) {
+            if (item.getKey().equals(key)) {
+                return item;
+            }
+        }
+
+        return null;
     }
 }
