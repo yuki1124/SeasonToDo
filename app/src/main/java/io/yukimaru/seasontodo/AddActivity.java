@@ -37,7 +37,7 @@ public class AddActivity extends AppCompatActivity {
 
                 String content = contentText.getText().toString();
                 String key = reference.push().getKey();//keyのpush->firebaseのkey(現在時刻を暗号化したもの)
-                Item item = new Item(key, content);
+                Item item = new Item(content,key);
 
                 //reference.child("Spring").child(key).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {
                 reference.child(key).setValue(item).addOnSuccessListener(new OnSuccessListener<Void>() {//保存がされた後の処理
