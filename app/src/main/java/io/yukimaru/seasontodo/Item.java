@@ -6,11 +6,15 @@ public class Item {
     private String key;
 
 
-public Item(String content, String season, String key){
+public Item(String content, String key){
    this.content = content;
    this.season = season;
    this.key = key;
 }
+
+public Item(){
+
+    }
     public String getKey() {
         return key;
     }
