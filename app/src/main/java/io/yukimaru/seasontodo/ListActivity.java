@@ -60,7 +60,7 @@ public class ListActivity extends AppCompatActivity{
         customAdapter = new CustomAdapter(this, 0, new ArrayList<Item>());
         listView.setAdapter(customAdapter);
 
-        reference.child(season).addChildEventListener(new ChildEventListener() {
+        reference.child(message).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Item item = dataSnapshot.getValue(Item.class);

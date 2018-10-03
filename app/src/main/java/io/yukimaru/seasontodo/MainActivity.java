@@ -5,14 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     String season;
-    Button springButton;
-    Button summerButton;
-    Button autumnButton;
-    Button winterButton;
+    ImageButton springButton;
+    ImageButton summerButton;
+    ImageButton autumnButton;
+    ImageButton winterButton;
 
     //intent
     public static final String Season
@@ -23,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        springButton = (Button)findViewById(R.id.spring_button);
-        summerButton = (Button)findViewById(R.id.summer_button);
-        autumnButton = (Button)findViewById(R.id.autumn_button);
-        winterButton = (Button)findViewById(R.id.winter_button);
+        springButton = (ImageButton)findViewById(R.id.spring_button);
+        summerButton = (ImageButton)findViewById(R.id.summer_button);
+        autumnButton = (ImageButton)findViewById(R.id.autumn_button);
+        winterButton = (ImageButton)findViewById(R.id.winter_button);
     }
 
     public void springClick(View v){
