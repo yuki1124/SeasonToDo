@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".AddActivity"
     android:padding="15dp">
 
@@ -18,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="ToDo" />
+            android:hint="ToDo"/>
 
         <Button
             android:id="@+id/send_button"
@@ -26,8 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_margin="8dp"
-            android:background="@color/colorAccent"
+            android:background="#E9D7FF"
             android:text="add"
+            app:fontFamily="@font/adamina"
             android:textColor="#ffffffff" />
     </LinearLayout>
 </RelativeLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ListActivity">
 
     <LinearLayout
@@ -18,7 +19,9 @@
             android:layout_weight="8"
             android:text="Season"
             android:textAlignment="center"
-            android:textSize="40sp" />
+            android:textColor="#FFD4D4"
+            android:textSize="60sp"
+            app:fontFamily="cursive" />
 
         <ListView
             android:id="@+id/list_view"

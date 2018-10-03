@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StartActivity"
-    android:padding="15dp">
+    android:background="#FFFFFF"
+    android:padding="15dp"
+    tools:context=".StartActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +21,19 @@
             android:padding="30dp"
             android:text="Season ToDo"
             android:textAlignment="center"
-            android:textSize="50dp" />
+            android:textColor="#FFD4D4"
+            android:textSize="60dp"
+            app:fontFamily="cursive" />
 
         <Button
             android:id="@+id/start_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#E5E5E5"
             android:text="start"
-            android:textSize="20dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:fontFamily="@font/adamina" />
 
     </LinearLayout>
 

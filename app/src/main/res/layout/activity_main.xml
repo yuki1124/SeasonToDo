@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e1e1e1"
+    android:background="#FFFFFF"
     android:padding="15dp"
     tools:context=".MainActivity">
 
@@ -20,7 +20,9 @@
             android:layout_weight="8"
             android:text="Select Season"
             android:textAlignment="center"
-            android:textSize="40sp" />
+            android:textColor="#E9D7FF"
+            android:textSize="60sp"
+            app:fontFamily="cursive" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +57,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Spring"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="#FFD4D4"
+                        android:textSize="30dp"
+                        app:fontFamily="cursive" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,8 +74,8 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:onClick="autumnClick"
                         android:background="@drawable/btn_layout"
+                        android:onClick="autumnClick"
                         app:srcCompat="@drawable/aki" />
 
                     <TextView
@@ -79,7 +84,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Autumn"
-                        android:textAlignment="center" />
+                        android:textColor="#FFD4D4"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        app:fontFamily="cursive" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -101,8 +109,8 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:onClick="summerClick"
                         android:background="@drawable/btn_layout"
+                        android:onClick="summerClick"
                         app:srcCompat="@drawable/natu" />
 
                     <TextView
@@ -111,7 +119,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Summer"
-                        android:textAlignment="center" />
+                        android:textColor="#FFD4D4"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        app:fontFamily="cursive" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -125,8 +136,8 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:onClick="winterClick"
                         android:background="@drawable/btn_layout"
+                        android:onClick="winterClick"
                         app:srcCompat="@drawable/huyu" />
 
                     <TextView
@@ -135,7 +146,10 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Winter"
-                        android:textAlignment="center" />
+                        android:textColor="#FFD4D4"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        app:fontFamily="cursive" />
                 </LinearLayout>
 
             </LinearLayout>
