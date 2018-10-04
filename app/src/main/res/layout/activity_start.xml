@@ -35,6 +35,14 @@
             android:textSize="20dp"
             app:fontFamily="@font/adamina" />
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/marigold_flowers" />
+
     </LinearLayout>
 
 </RelativeLayout>
